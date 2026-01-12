@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new food</title>
+</head>
+<body>
+    <h1>Create a new food!</h1>
+    <form action="/foods" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"/>
+
+        <label for="mustKeepRefregerated">Must keep it refregerated?</label>
+        <input type="checkbox" name="mustKeepRefregerated" id="mustKeepRefregerated">
+
+        <label for="mustkeepFrozen">Must keep it frozen?</label>
+        <input type="checkbox" name="mustkeepFrozen" id="mustkeepFrozen">
+
+        <button type="submit">Add Food</button>
+    </form>
+    <br>
+     <a href="/foods/">Back to Foods</a>
+</body>
+</html>
